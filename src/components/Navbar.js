@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="flex justify-between items-center font-bold px-12 p-4 text-sm ">
+      <div className="flex justify-between items-center px-12 p-4 text-sm ">
         <div>
           <a href="https://tesla.com">
             <img
