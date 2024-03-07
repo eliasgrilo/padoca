@@ -9,4 +9,19 @@
 
 * {
   font-family: "Gotham Book", sans-serif;
+  
+  .logo {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 600;
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 120px;
+  height: 30px;
+  cursor: pointer;
+  filter: brightness(0) invert(1);
+  font-family: "Poppins";
 }
+
+
