@@ -1,13 +1,28 @@
-import Navbar from "./components/Navbar";
-import Model from "./components/Model";
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Navigation from './components/Navigation';
+import Home from './pages/Home';
+import Patisserie from './pages/Patisserie';
+import Bakery from './pages/Bakery';
+import Cafe from './pages/Cafe';
+import Discover from './pages/Discover';
+import Shop from './pages/Shop';
+import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="bg-[url('https://ik.imagekit.io/tsadb415v5/22.mp4?updatedAt=1709057231909')] lg:bg-[url('https://ik.imagekit.io/tsadb415v5/Model-FY.mp4?updatedAt=1709077007973')] h-screen bg-cover bg-center">
-      <Navbar />
-      <Model />
-    </div>
+    <Router>
+      <Navigation />
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/patisserie" component={Patisserie} />
+        <Route path="/bakery" component={Bakery} />
+        <Route path="/cafe" component={Cafe} />
+        <Route path="/discover" component={Discover} />
+        <Route path="/shop" component={Shop} />
+      </Switch>
+    </Router>
   );
-}
+};
 
 export default App;
